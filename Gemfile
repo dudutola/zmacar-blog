@@ -68,4 +68,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem 'httparty'
 gem "image_processing", ">= 1.2"
+gem 'nokogiri'

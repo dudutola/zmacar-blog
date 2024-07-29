@@ -2,7 +2,7 @@
   <h2><%= link_to post.title, post.external_url %></h2>
   
   <p><%= post.published_date.strftime("%B %d, %Y") %></p>
-  <p><%= post.publisher %></p>
+  <p><%= post.publisher.capitalize %></p>
    <%= image_tag post.thumbnail if post.thumbnail.attached?  %>
   <p><%= post.content %></p>
   <hr>  

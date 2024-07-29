@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   has_one_attached :thumbnail
-  enum :publisher, %w[zmacar telanon]
+  enum :publisher, { zmacar: 'zmacar', telanon: 'telanon' }
   before_validation :extract_publisher, if: -> { external_url.present? }
   validates :title, :publisher, :published_date, presence: true
 

@@ -75,3 +75,6 @@ gem "image_processing", ">= 1.2"
 gem 'nokogiri'
 
 gem "sassc-rails"
+
+# Authentification
+gem 'devise'

@@ -11,6 +11,7 @@
           <%= image_tag 'placeholder.png', alt: 'Placeholder image', class: 'article-photo' %>
         <% end %>
       </div>
-    <p><%= truncate(article.content, length: 200) %></p>
+      <p><%= truncate(article.content, length: 200) %></p>
+    </div>
   <% end %>
 </div>

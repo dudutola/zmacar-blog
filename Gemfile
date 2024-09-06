@@ -73,3 +73,5 @@ end
 gem 'httparty'
 gem "image_processing", ">= 1.2"
 gem 'nokogiri'
+
+gem "sassc-rails"

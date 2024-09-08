@@ -7,9 +7,6 @@ Rails.application.routes.draw do
   # Article routes
   resources :articles, only: %i[index show]
 
-  # Defines the root path route ("/")
-  root 'articles#index'
-
   # Admin routes
   get 'dashboard', to: 'dashboard#index', as: 'dashboard'
   resources :users, only: %i[index show edit update destroy]
@@ -17,4 +14,7 @@ Rails.application.routes.draw do
 
   # Define the sign-in path
   # get 'sign_in', to: 'sessions#new', as: 'sign_in'
+
+  # Defines the root path route ("/")
+  root 'articles#index'
 end
